@@ -20,54 +20,54 @@ header {
     border-bottom: #0779e4 3px solid;
 }
 
-    header a {
-        color: #fff;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-size: 16px;
-    }
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
 
-    header ul {
-        padding: 0;
-        list-style: none;
-    }
+header ul {
+    padding: 0;
+    list-style: none;
+}
 
-    header li {
-        float: left;
-        display: inline;
-        padding: 0 20px 0 20px;
-    }
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
 
-    header #branding {
-        float: left;
-    }
+header #branding {
+    float: left;
+}
 
-        header #branding h1 {
-            margin: 0;
-        }
+header #branding h1 {
+    margin: 0;
+}
 
-    header nav {
-        float: right;
-        margin-top: 10px;
-    }
+header nav {
+    float: right;
+    margin-top: 10px;
+}
 
-    header .highlight, header .current a {
-        color: #0779e4;
-        font-weight: bold;
-    }
+header .highlight, header .current a {
+    color: #0779e4;
+    font-weight: bold;
+}
 
-    header a:hover {
-        color: #ccc;
-    }
+header a:hover {
+    color: #ccc;
+}
 
 section {
     padding: 20px 0;
     border-bottom: #e8491d 1px solid;
 }
 
-    section:last-child {
-        border-bottom: none;
-    }
+section:last-child {
+    border-bottom: none;
+}
 
 footer {
     padding: 20px;
@@ -75,4 +75,46 @@ footer {
     color: #fff;
     background-color: #333;
     text-align: center;
+}
+
+/* Styles for GIFs and text side by side with scrollable GIF container */
+.work-item {
+    display: flex;
+    align-items: center; /* Center align items vertically */
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 2px solid #ccc; /* Border around each item */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #fff; /* Background color inside the border */
+}
+
+.gif-container {
+    display: flex;
+    flex-direction: column; /* Stack GIFs vertically */
+    margin-right: 20px; /* Space between GIFs and text */
+    max-height: 500px; /* Set a max height for the GIFs container */
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
+    overflow-x: auto; /* Enable horizontal scrolling if content overflows */
+    max-width: 400px; /* Set max width for the container */
+    white-space: nowrap; /* Prevent GIFs from wrapping to the next line */
+}
+
+.gif-container img {
+    margin-bottom: 10px; /* Space between each GIF */
+    max-width: 300px;
+    height: auto;
+    border-radius: 5px; /* Optional: add rounded corners to the GIF */
+}
+
+.description {
+    display: flex;
+    align-items: center; /* Center text vertically */
+    justify-content: center; /* Center text horizontally */
+    text-align: center; /* Center text alignment */
+    flex: 1; /* Allow text to take the remaining space */
+}
+
+.description p {
+    font-size: 16px;
+    margin: 0;
 }
